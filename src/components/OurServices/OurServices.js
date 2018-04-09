@@ -13,7 +13,7 @@ import MdAssessment from 'react-icons/lib/md/assessment'
 
 const OurFeatures = styled(Column) `
 	background: rgba(255, 255, 255, 0.7294117647058823);
-	height: 210px;
+	height: 310px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +128,7 @@ const OurFeatureWrapper = styled.div`
 `
 
 
-export default class Welcome extends React.Component {
+export default class OurServices extends React.Component {
 	render() {
 		return (
 			<OurFeatureWrapper>

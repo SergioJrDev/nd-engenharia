@@ -44,3 +44,11 @@ export const Column = styled.div`
     width: ${props => props.lg ? props.lg+'%' : props.md ? props.md+'%' : props.sm ? props.sm+'%' : props.xs ? props.xs+'%' : '100%'};
   }
 `;
+
+export const P = styled.p`
+  font-size: 1.5rem;
+`
+
+export const  H2 = styled.h2`
+  font-size: 2rem;
+`

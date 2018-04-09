@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, OurServices, AboutUs, GoogleMaps } from 'Components';
+import { Header, OurServices, AboutUs, GoogleMaps, Contact } from 'Components';
 import Carousel from 'nuka-carousel';
 
 export default class Home extends React.Component {
@@ -25,9 +25,10 @@ export default class Home extends React.Component {
             </article>
           </Carousel>
         </div>
-        <OurServices />
         <AboutUs />
+        <OurServices />
         <GoogleMaps />
+        <Contact />
       </div>
     );
   }

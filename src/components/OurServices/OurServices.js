@@ -24,6 +24,7 @@ const OurFeatures = styled(Column) `
 		}
 		p {
 			display: block !important;
+			font-size: 1.3rem;
 		}
 	}
 `

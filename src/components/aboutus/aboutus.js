@@ -1,25 +1,23 @@
 import React from 'react'
-import {  Container, Row, Column, P, H2 } from 'StyledComponents'
+import { Container, Row, Column, P, H2, ContainerWrapper } from 'StyledComponents'
 import styled from 'styled-components'
-
-const ContainerWrapper = styled(Container)`
-    padding-top: 80px;
-    padding-bottom: 80px;
-`
 
 export default class AboutUs extends React.Component {
     render() {
-        return(
+        return (
             <ContainerWrapper>
-                <Row>
-                    <Column>
+                <Row alignItems='normal'>
+                    <Column lg={33}>
                         <H2>Um pouco sobre nós</H2>
                     </Column>
-                    <Column>
-                         <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur urna erat, quis tempor ex fermentum sit amet. Nullam vel placerat orci. Ut at magna sed dui aliquet condimentum quis gravida felis. Donec vel urna at nulla fringilla maximus. Nulla lobortis luctus vehicula. Nulla facilisi. In at metus leo. Etiam cursus est a lorem lacinia tristique. Suspendisse imperdiet, mauris id porta viverra, mi enim egestas enim, in egestas mi orci in odio. Nunc sed euismod erat. Nam eget augue mauris. Proin vehicula dictum mi, feugiat mattis magna rutrum a. Quisque at massa dui.</P>
-                        </Column>
-                 </Row>
+                    <Column lg={33}>
+                        <P>A ND Engenharia Ambiental tem um único objetivo: a eficiência no atendimento ao cliente. Para isso, investimentos maciços em capacitação profissional. A filosofia de trabalho se baseia em qualidade, segurança e a melhor relação custo–benefício para o cliente. Após estudos e análises do mercado no segmento de soluções ambientais, constatamos que a segurança e qualidade são os principais fatores, tornando-se exigências primordiais dos clientes que utilizam tais serviços.</P>
+                    </Column>
+                    <Column lg={33}>
+                        <P>Baseando-se nestes princípios a empresa ND Engenharia Ambiental foi criada, para proporcionar aos nossos clientes o que é fundamental no ramo. SEGURANÇA E QUALIDADE. A ND Engenharia Ambiental acredita reunir condições para atender as necessidades de sua empresa e a certeza de que formaremos muito mais que uma relação de negócios, mas uma parceria de sucesso.</P>
+                    </Column>
+                </Row>
             </ContainerWrapper>
-            )
+        )
     }
 }

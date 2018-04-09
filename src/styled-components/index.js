@@ -25,9 +25,14 @@ export const Container = styled.div`
   margin: 0 auto;
 `;
 
+export const ContainerWrapper = styled(Container)`
+    padding-top: 80px;
+    padding-bottom: 80px;
+`
+
 export const Row = styled.div`
   display: flex;
-  align-items: center;
+  align-items: ${props => props.alignItems || 'center'};
   flex-wrap: wrap;
 `;
 
@@ -46,7 +51,8 @@ export const Column = styled.div`
 `;
 
 export const P = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 `
 
 export const  H2 = styled.h2`

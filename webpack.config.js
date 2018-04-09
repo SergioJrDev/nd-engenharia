@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const path = require('path');
 const indexHtml = path.join(__dirname, "src/index.html");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -12,6 +13,14 @@ module.exports = {
     ],
     resolve: {
         extensions: ['.js', '.jsx', '.css', '.scss'],
+        alias: {
+            Components: path.resolve(__dirname, "src/components"),
+            StyledComponents: path.resolve(__dirname, "src/styled-components"),
+            Utils: path.resolve(__dirname, "src/utils"),
+            Pages: path.resolve(__dirname, "src/pages"),
+            Assets: path.resolve(__dirname, "src/assets"),
+            Store: path.resolve(__dirname, "src/store"),
+        }
     },
     output: {
         path: path.resolve(__dirname, "public"),
@@ -32,16 +41,16 @@ module.exports = {
                 test: /\.scss$/,
                 use: [{
                     loader: "style-loader"
-                  }, {
-                    loader: "css-loader" 
-                  }, {
+                }, {
+                    loader: "css-loader"
+                }, {
                     loader: "sass-loader"
-                  }]
+                }]
             },
             {
                 test: /\.css$/,
-                  use: ['style-loader', 'css-loader']
-              },
+                use: ['style-loader', 'css-loader']
+            },
             {
                 test: indexHtml,
                 use: [

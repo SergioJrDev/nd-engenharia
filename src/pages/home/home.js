@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from './../../components';
+import { Header, Welcome } from 'Components';
 import Carousel from 'nuka-carousel';
 
 export default class Home extends React.Component {
@@ -26,6 +26,7 @@ export default class Home extends React.Component {
           </Carousel>
         </div>
         <div className='boxes'></div>
+        <Welcome />
       </div>
     );
   }

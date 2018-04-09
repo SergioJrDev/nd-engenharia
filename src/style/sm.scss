@@ -1,0 +1,15 @@
+@import './theme.scss';
+
+@media screen and (min-width: $sm) {
+  .flex-sm {
+    display: flex;
+  }
+
+  .db-sm {
+    display: block;
+  }
+
+  .dib-sm {
+    display: inline-block;
+  }
+}

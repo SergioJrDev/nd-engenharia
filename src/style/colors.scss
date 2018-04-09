@@ -1,0 +1,35 @@
+@import './theme.scss';
+
+// Colors
+.c_theme {
+  color: $theme;
+}
+.c_dark {
+  color: $dark;
+}
+.c_gray {
+  color: $gray;
+}
+.c_gray-ligth {
+  color: $gray-light;
+}
+.c_white {
+  color: $white;
+}
+
+// Background
+.bg_theme {
+  background-color: $theme;
+}
+.bg_dark {
+  background-color: $dark;
+}
+.bg_gray {
+  background-color: $gray;
+}
+.bg_gray-ligth {
+  background-color: $gray-light;
+}
+.bg_white {
+  background-color: $white;
+}

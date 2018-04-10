@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { ContainerWrapper, H2, Row, Column, P } from 'StyledComponents'
+import { lightDark } from 'Utils'
 
 const InputWrapper = styled.div`
     margin-bottom: 20px;
     label {
         display: block;
         padding-left: 12px;
+        margin-bottom: 4px;
+        color: ${lightDark};
     }
     input, textarea {
         width: 100%;
@@ -26,16 +29,16 @@ const ButtonSubmit = styled.button`
 `
 
 const ColumnCenter = styled(Column)`
-    text-align: center;
+
 `
 
 export default class Contact extends React.Component {
     render() {
         return (
             <ContainerWrapper>
-                <Row>
+            <H2>Mande uma mensagem pra nós</H2>
+                <Row alignItems={'normal'}>
                     <Column md={50}>
-                        <H2>Mande uma mensagem pra nós</H2>
                         <form>
                             <InputWrapper>
                                 <label>Nome:</label>
@@ -57,7 +60,6 @@ export default class Contact extends React.Component {
                         </form>
                     </Column>
                     <ColumnCenter md={50}>
-                        <P>Ou entre em contato diretamente conosco</P>
                         <P>Tel: 11 2350-2860</P>
                         <P>E-mail: contato@ngengenhariaambiental.com.br</P>
                         <P>Av. Antônio Massa, 355 - Sala 8, Centro - Poá/SP</P>

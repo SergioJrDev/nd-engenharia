@@ -37,7 +37,7 @@ const OurFeatures = styled(Column) `
 		}
 		&:hover {
 			div {
-				top: 40px;
+				top: 60px;
 			}
 			p {
 				transform: scale(1);

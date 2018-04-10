@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sm, md, lg, lightDark } from './../utils';
+import { sm, md, lg, lightDark, theme } from './../utils';
 
 export const Section = styled.section`
   background: #333;
@@ -58,7 +58,10 @@ export const P = styled.p`
 
 export const  H2 = styled.h2`
   font-size: 2rem;
+  margin-bottom: 15px;
   font-family: 'Dosis', sans-serif;
   color: ${lightDark};
   text-transform: uppercase;
+  border-left: 4px solid #a5a5a5;
+  padding-left: 10px;
 `

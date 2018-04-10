@@ -40,6 +40,7 @@ export default class Home extends React.Component {
         </div>
         <AboutUs />
         <OurServices />
+        <Contact />
         <GoogleMaps />
         <Contact />
         <Footer />

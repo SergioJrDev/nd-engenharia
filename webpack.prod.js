@@ -10,6 +10,14 @@ module.exports = {
     ],
     resolve: {
         extensions: ['.js', '.jsx', '.css', '.scss'],
+        alias: {
+            Components: path.resolve(__dirname, "src/components"),
+            StyledComponents: path.resolve(__dirname, "src/styled-components"),
+            Utils: path.resolve(__dirname, "src/utils"),
+            Pages: path.resolve(__dirname, "src/pages"),
+            Assets: path.resolve(__dirname, "src/assets"),
+            Store: path.resolve(__dirname, "src/store"),
+        }
     },
     output: {
         path: path.resolve(__dirname, "public"),

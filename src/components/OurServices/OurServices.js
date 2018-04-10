@@ -13,24 +13,43 @@ import MdAssessment from 'react-icons/lib/md/assessment'
 
 const OurFeatures = styled(Column) `
 	background: rgba(255, 255, 255, 0.7294117647058823);
-	height: 310px;
-    display: flex;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
     align-items: center;
     justify-content: center;
 	text-align: center;
-	&:hover {
-		div {
-			display: none;
+	position: relative;
+	div {
+		margin-bottom: 15px;
+	}
+	@media screen and (min-width: ${sm}) {
+	div {
+		position: absolute;
+		top: 100px;
+		transition: all .4s ease;
 		}
 		p {
-			display: block !important;
-			font-size: 1.3rem;
+			margin-top: 140px;
+			transition: all .4s ease;
+			transform: scale(0);
+			height: 0;
+		}
+		&:hover {
+			div {
+				top: 40px;
+			}
+			p {
+				transform: scale(1);
+				height: auto;
+			}
 		}
 	}
 `
 
 const IconStyle = {
-	fontSize: '3rem',
+	fontSize: '5rem',
+	marginBottom: '15px',
 }
 
 const CustomRow = styled(Row) `
@@ -78,7 +97,7 @@ const CustomRow = styled(Row) `
 
 
 	&:nth-child(2) {
-		& > div:nth-child(even) {
+		& > div:nth-child(odd) {
 			background: ${themeOpacity};
 			* {
 				color: ${white};
@@ -142,21 +161,21 @@ export default class OurServices extends React.Component {
 							<FaBeer style={IconStyle} />
 							<h2>Stability</h2>
 						</div>
-						<p style={{ display: 'none' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit a nisl vestibulum pretium sit amet et lacus. Fusce pulvinar arcu vitae ipsum venenatis mollis. Pellentesque sit amet tincidunt elit</p>
+						<p>Don’t have the time or the staff to deal with problems? With our Company, you can count on reliable service, performance and responsiveness from a dedicated team.</p>
 					</OurFeatures>
 					<OurFeatures sm={50} lg={25}>
 						<div>
 							<MdAcUnit style={IconStyle} />
 							<h2>Stability</h2>
 						</div>
-						<p style={{ display: 'none' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit a nisl vestibulum pretium sit amet et lacus. Fusce pulvinar arcu vitae ipsum venenatis mollis. Pellentesque sit amet tincidunt elit</p>
+						<p>Don’t have the time or the staff to deal with problems? With our Company, you can count on reliable service, performance and responsiveness from a dedicated team.</p>
 					</OurFeatures>
 					<OurFeatures sm={50} lg={25}>
 						<div>
 							<MdAccountBalance style={IconStyle} />
 							<h2>Stability</h2>
 						</div>
-						<p style={{ display: 'none' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit a nisl vestibulum pretium sit amet et lacus. Fusce pulvinar arcu vitae ipsum venenatis mollis. Pellentesque sit amet tincidunt elit</p>
+						<p>Don’t have the time or the staff to deal with problems? With our Company, you can count on reliable service, performance and responsiveness from a dedicated team.</p>
 					</OurFeatures>
 				</CustomRow>
 				<CustomRow>
@@ -165,28 +184,28 @@ export default class OurServices extends React.Component {
 							<MdAddAlarm style={IconStyle} />
 							<h2>Stability</h2>
 						</div>
-						<p style={{ display: 'none' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit a nisl vestibulum pretium sit amet et lacus. Fusce pulvinar arcu vitae ipsum venenatis mollis. Pellentesque sit amet tincidunt elit</p>
+						<p>Don’t have the time or the staff to deal with problems? With our Company, you can count on reliable service, performance and responsiveness from a dedicated team.</p>
 					</OurFeatures>
 					<OurFeatures sm={50} lg={25}>
 						<div>
 							<MdAddLocation style={IconStyle} />
 							<h2>Stability</h2>
 						</div>
-						<p style={{ display: 'none' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit a nisl vestibulum pretium sit amet et lacus. Fusce pulvinar arcu vitae ipsum venenatis mollis. Pellentesque sit amet tincidunt elit</p>
+						<p>Don’t have the time or the staff to deal with problems? With our Company, you can count on reliable service, performance and responsiveness from a dedicated team.</p>
 					</OurFeatures>
 					<OurFeatures sm={50} lg={25}>
 						<div>
 							<MdAllInclusive style={IconStyle} />
 							<h2>Stability</h2>
 						</div>
-						<p style={{ display: 'none' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit a nisl vestibulum pretium sit amet et lacus. Fusce pulvinar arcu vitae ipsum venenatis mollis. Pellentesque sit amet tincidunt elit</p>
+						<p>Don’t have the time or the staff to deal with problems? With our Company, you can count on reliable service, performance and responsiveness from a dedicated team.</p>
 					</OurFeatures>
 					<OurFeatures sm={50} lg={25}>
 						<div>
 							<MdAssessment style={IconStyle} />
 							<h2>Stability</h2>
 						</div>
-						<p style={{ display: 'none' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit a nisl vestibulum pretium sit amet et lacus. Fusce pulvinar arcu vitae ipsum venenatis mollis. Pellentesque sit amet tincidunt elit</p>
+						<p>Don’t have the time or the staff to deal with problems? With our Company, you can count on reliable service, performance and responsiveness from a dedicated team.</p>
 					</OurFeatures>
 				</CustomRow>
 			</OurFeatureWrapper>

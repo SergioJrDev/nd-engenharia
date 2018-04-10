@@ -78,7 +78,7 @@ module.exports = {
               ],
               mobile: true,
               lang: 'pt-BR',
-              bodyHtmlSnippet: '<div id="root"></div><link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">',
+              bodyHtmlSnippet: '<div id="root"></div><link href="https://fonts.googleapis.com/css?family=Dosis:700|Raleway:300,400" rel="stylesheet">',
         }),
         //if you want to pass in options, you can do so:
         new ExtractTextPlugin({

@@ -1,6 +1,19 @@
 import React from 'react';
-import { Header, OurServices, AboutUs, GoogleMaps, Contact } from 'Components';
+import { Header, OurServices, AboutUs, GoogleMaps, Contact, Footer } from 'Components';
 import Carousel from 'nuka-carousel';
+import styled from 'styled-components'
+
+import Ambiental from './../../assets/empresa.jpg'
+import Engenheiros from './../../assets/hand.jpg';
+
+const SliderWrapper1 = styled.article`
+  background-image: url(${Ambiental});
+`
+
+const SliderWrapper2 = styled.article`
+  background-image: url(${Engenheiros});
+  background-position: center bottom !important;
+`
 
 export default class Home extends React.Component {
 
@@ -11,24 +24,25 @@ export default class Home extends React.Component {
         <Header />
         <div className='slider'>
           <Carousel>
-            <article>
+            <SliderWrapper1>
               <div>
                 <h1>NG Engenharia Ambiental 1</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               </div>
-            </article>
-            <article>
+            </SliderWrapper1>
+            <SliderWrapper2>
               <div>
                 <h1>NG Engenharia Ambiental 2</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               </div>
-            </article>
+            </SliderWrapper2>
           </Carousel>
         </div>
         <AboutUs />
         <OurServices />
         <GoogleMaps />
         <Contact />
+        <Footer />
       </div>
     );
   }

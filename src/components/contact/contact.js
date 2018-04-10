@@ -25,6 +25,10 @@ const ButtonSubmit = styled.button`
     text-transform: uppercase;
 `
 
+const ColumnCenter = styled(Column)`
+    text-align: center;
+`
+
 export default class Contact extends React.Component {
     render() {
         return (
@@ -52,12 +56,12 @@ export default class Contact extends React.Component {
                             <ButtonSubmit type='submit'>Enviar</ButtonSubmit>
                         </form>
                     </Column>
-                    <Column md={50}>
+                    <ColumnCenter md={50}>
                         <P>Ou entre em contato diretamente conosco</P>
                         <P>Tel: 11 2350-2860</P>
                         <P>E-mail: contato@ngengenhariaambiental.com.br</P>
                         <P>Av. Antônio Massa, 355 - Sala 8, Centro - Poá/SP</P>
-                    </Column>
+                    </ColumnCenter>
                 </Row>
             </ContainerWrapper>
         )

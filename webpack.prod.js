@@ -52,17 +52,21 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png)$/,
-                loaders: [
-                    {
-                        loader: "file-loader"
-                    },
-                ],
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: '[hash].[ext]',
+                      outputPath: 'images/'
+                    }  
+                  }
+                ]
             },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'A React Quickstarter',
+            title: 'ND Engenharia Ambiental',
             minify: {
                 collapseWhitespace: true,
                 preserveLineBreaks: true,

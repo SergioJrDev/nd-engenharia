@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
     Switch,
     Redirect,
@@ -14,8 +14,8 @@ class AppRouter extends React.Component {
         return(
             <Router>
                 <Switch>
-                    <Route exact path='/inicio' component={Home} />
-                    <Redirect to='/inicio' />
+                    <Route exact path='/' component={Home} />
+                    <Redirect to='/' />
                 </Switch>
             </Router>
         );

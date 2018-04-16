@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { ContainerWrapper, H2, Row, Column, P } from 'StyledComponents'
-import { lightDark } from 'Utils'
+import React from 'react';
+import styled from 'styled-components';
+import { ContainerMaxWith, H2, Row, Column, P } from 'StyledComponents';
+import { lightDark } from 'Utils';
 
 const InputWrapper = styled.div`
     margin-bottom: 20px;
@@ -28,44 +28,39 @@ const ButtonSubmit = styled.button`
     text-transform: uppercase;
 `
 
-const ColumnCenter = styled(Column)`
+const ColumnCenter = styled(Column) `
 
 `
 
 export default class Contact extends React.Component {
-    render() {
-        return (
-            <ContainerWrapper>
-            <H2>Mande uma mensagem pra nós</H2>
-                <Row alignItems={'normal'}>
-                    <Column md={50}>
-                        <form>
-                            <InputWrapper>
-                                <label>Nome:</label>
-                                <input type='text' id='nome' placeholder='Seu nome' />
-                            </InputWrapper>
-                            <InputWrapper>
-                                <label>Email:</label>
-                                <input type='email' id='email' placeholder='Seu e-mail' />
-                            </InputWrapper>
-                            <InputWrapper>
-                                <label>Telefone:</label>
-                                <input type='text' id='telefone' placeholder='Seu telefone' />
-                            </InputWrapper>
-                            <InputWrapper>
-                                <label>Mensagem:</label>
-                                <textarea rows="4" cols="50" placeholder='Sua Mensagem'></textarea>
-                            </InputWrapper>
-                            <ButtonSubmit type='submit'>Enviar</ButtonSubmit>
-                        </form>
-                    </Column>
-                    <ColumnCenter md={50}>
-                        <P>Tel: 11 2350-2860</P>
-                        <P>E-mail: contato@ngengenhariaambiental.com.br</P>
-                        <P>Av. Antônio Massa, 355 - Sala 8, Centro - Poá/SP</P>
-                    </ColumnCenter>
-                </Row>
-            </ContainerWrapper>
-        )
-    }
+  render() {
+    return (
+      <ContainerMaxWith>
+        <H2>Mande uma mensagem pra nós</H2>
+        <Row alignItems={'normal'}>
+          <Column>
+            <form>
+              <InputWrapper>
+                <label>Nome:</label>
+                <input type='text' id='nome' placeholder='Seu nome' />
+              </InputWrapper>
+              <InputWrapper>
+                <label>Email:</label>
+                <input type='email' id='email' placeholder='Seu e-mail' />
+              </InputWrapper>
+              <InputWrapper>
+                <label>Telefone:</label>
+                <input type='text' id='telefone' placeholder='Seu telefone' />
+              </InputWrapper>
+              <InputWrapper>
+                <label>Mensagem:</label>
+                <textarea rows="4" cols="50" placeholder='Sua Mensagem'></textarea>
+              </InputWrapper>
+              <ButtonSubmit type='submit'>Enviar</ButtonSubmit>
+            </form>
+          </Column>
+        </Row>
+      </ContainerMaxWith>
+    )
+  }
 }

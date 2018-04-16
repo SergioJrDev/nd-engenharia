@@ -71,7 +71,17 @@ class HeaderClass extends React.Component {
         <div className='container db flex-sm a-center space-between'>
           <Logo href='#'>Nd Engenharia Ambiental</Logo>
           {isMobile && <MenuIcon aria-label='Abrir menu' onClick={this.handleOpenMenu}><MdMenu /></MenuIcon>}
-          {openMenu || !isMobile && <nav>
+          {isMobile && openMenu && <nav>
+            <ul>
+              <li><a href='#home' className='actived'>Home</a></li>
+              <li><a href='#sobre-nos'>Sobre nós</a></li>
+              <li><a href='#projetos'>Projetos</a></li>
+              <li><a href='#servicos'>O que fazemos</a></li>
+              <li><a href='#contato'>Contato</a></li>
+            </ul>
+          </nav>}
+
+          {!isMobile && <nav>
             <ul>
               <li><a href='#home' className='actived'>Home</a></li>
               <li><a href='#sobre-nos'>Sobre nós</a></li>

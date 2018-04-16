@@ -20,15 +20,21 @@ export const IntroTitle = styled.p`
 `;
 
 export const Container = styled.div`
-  padding: 0 15px;
+  /* padding: 0 15px; */
   max-width: 1200px;
   margin: 0 auto;
 `;
 
+
+
 export const ContainerWrapper = styled(Container)`
     padding-top: 80px;
     padding-bottom: 80px;
-`
+`;
+
+export const ContainerMaxWith = styled(ContainerWrapper)`
+    max-width: 700px;
+`;
 
 export const Row = styled.div`
   display: flex;

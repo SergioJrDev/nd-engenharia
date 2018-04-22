@@ -20,11 +20,9 @@ export const IntroTitle = styled.p`
 `;
 
 export const Container = styled.div`
-  /* padding: 0 15px; */
   max-width: 1200px;
   margin: 0 auto;
 `;
-
 
 
 export const ContainerWrapper = styled(Container)`
@@ -60,7 +58,7 @@ export const P = styled.p`
   font-size: 1.3rem;
   margin-bottom: 10px;
   color: ${lightDark};
-`
+`;
 
 export const  H2 = styled.h2`
   font-size: 2rem;
@@ -69,5 +67,13 @@ export const  H2 = styled.h2`
   color: ${lightDark};
   text-transform: uppercase;
   border-left: 4px solid #a5a5a5;
-  padding-left: 10px;
-`
+  padding-left: 5px;
+  margin-left: 15px;
+`;
+
+export const HiddenImg = styled.img`
+  display: block;
+  height: 0;
+  width: 0;
+  opacity: 0;
+`;

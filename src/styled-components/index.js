@@ -77,3 +77,44 @@ export const HiddenImg = styled.img`
   width: 0;
   opacity: 0;
 `;
+
+
+// Contato
+export const InputWrapper = styled.div`
+    margin-bottom: 20px;
+    label {
+        display: block;
+        margin-bottom: 4px;
+        color: ${lightDark};
+    }
+    input, textarea {
+        width: 100%;
+        border: 1px solid #d8d8d8;
+        padding: 10px;
+        border-radius: 4px;
+    }
+`;
+
+export const ButtonSubmit = styled.button`
+    background: #7b9faf;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+`;
+
+
+export const FeedbackForm = styled.p`
+  margin-top: 20px;
+  font-weight: bold;
+`;
+
+export const FeedbackError = styled(FeedbackForm)`
+  color: red;
+`;
+
+export const FeedbackSuccess = styled(FeedbackForm)`
+  color: green;
+`;

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import LogoImage from './../../assets/logo.jpeg'
-import MdMenu from 'react-icons/lib/md/menu'
-import { sm } from 'Utils'
+import LogoImage from './../../assets/logo.jpeg';
+import MdMenu from 'react-icons/lib/md/menu';
+import { sm } from 'Utils';
 
 const Header = styled.header`
   padding: 30px 0;
@@ -36,7 +36,7 @@ const Logo = styled.a`
   @media screen and (min-width: ${sm}) {
     margin: 0;
   }
-`
+`;
 
 const MenuIcon = styled.button`
   position: absolute;
@@ -46,15 +46,15 @@ const MenuIcon = styled.button`
   background: none;
   border: 0;
   cursor: pointer;
-`
+`;
 
 class HeaderClass extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       openMenu: false,
       isMobile: window.innerWidth < 768,
-    }
+    };
   }
 
   handleOpenMenu = () => this.setState({openMenu: !this.state.openMenu})
@@ -64,8 +64,7 @@ class HeaderClass extends React.Component {
   }
 
   render() {
-    const { openMenu, isMobile } = this.state 
-    console.log(this.state)
+    const { openMenu, isMobile } = this.state;
     return (
       <Header>
         <div className='container db flex-sm a-center space-between'>
@@ -92,8 +91,8 @@ class HeaderClass extends React.Component {
           </nav>}
         </div>
       </Header>
-    )
+    );
   }
 }
 
-export default HeaderClass
+export default HeaderClass;

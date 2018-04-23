@@ -100,7 +100,7 @@ export default class Contact extends React.Component {
                 <label htmlFor='mensagem'>Mensagem:*</label>
                 <textarea id='mensagem' onChange={this.handleChange} rows="4" cols="50" placeholder='Sua Mensagem'></textarea>
               </InputWrapper>
-              <ButtonSubmit onClick={this.submitHandler} type='submit'>Enviar</ButtonSubmit>
+              <ButtonSubmit style={{marginBottom: '15px'}} onClick={this.submitHandler} type='submit'>Enviar</ButtonSubmit>
               <div className="g-recaptcha" data-sitekey="6Lfr2FQUAAAAAMO1euP7ooGpq9r5EuozZBAOeonH"></div>
               {feedback && <FeedbackError>{feedback}</FeedbackError>}
               {isSending && <FeedbackForm>Enviando...</FeedbackForm>}

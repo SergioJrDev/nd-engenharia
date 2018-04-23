@@ -66,7 +66,7 @@ const Footer = () =>
             <li><MdEmail style={IconStyle} />Contato@ngengenhariaambiental.com.br</li>
             <li><MdLocationOn style={IconStyle} />Av. Antônio Massa, 355,</li>
             <li><MdLocationOn style={IconStyle} />Sala 8, Centro - Poá/SP</li>
-            <li><FaFacebook style={IconStyle} /><a href="#">Facebook.com.br/nd-engenharia</a></li>
+            <li><FaFacebook style={IconStyle} /><a target="_blank" href="https://www.facebook.com/ND-Engenharia-Ambiental-186318995319829">Facebook.com.br/nd-engenharia</a></li>
           </ContactFooter>
         </Column>
       </Row>

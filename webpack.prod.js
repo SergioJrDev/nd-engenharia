@@ -43,8 +43,8 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                  use: ['style-loader', 'css-loader']
-              },
+                use: ['style-loader', 'css-loader']
+            },
             {
                 test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
@@ -53,13 +53,13 @@ module.exports = {
             {
                 test: /\.(jpe?g|png)$/,
                 use: [
-                  {
-                    loader: 'file-loader',
-                    options: {
-                      name: '[hash].[ext]',
-                      outputPath: 'images/'
-                    }  
-                  }
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[hash].[ext]',
+                            outputPath: 'images/'
+                        }
+                    }
                 ]
             },
         ]
@@ -67,22 +67,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'ND Engenharia Ambiental',
-            minify: {
-                collapseWhitespace: true,
-                preserveLineBreaks: true,
-                collapseInlineTagWhitespace: true
-              },
-            inject: false,
-            template: require('html-webpack-template'),
-            meta: [
-                {
-                  name: 'description',
-                  content: 'A better default template for html-webpack-plugin.'
-                }
-              ],
-              mobile: true,
-              lang: 'pt-BR',
-              bodyHtmlSnippet: '<div id="root"></div><link href="https://fonts.googleapis.com/css?family=Dosis:700|Raleway:300,400" rel="stylesheet">',
+            template: './src/index.html'
         }),
         //if you want to pass in options, you can do so:
         new ExtractTextPlugin({

@@ -21,7 +21,7 @@ export default class Home extends React.Component {
           <Carousel>
             <SliderWrapper1>
               <div>
-                <h1>NG Engenharia Ambiental</h1>
+                <h1>ND Engenharia Ambiental</h1>
                 <p>Desenvolvimento Sustentável</p>
               </div>
             </SliderWrapper1>

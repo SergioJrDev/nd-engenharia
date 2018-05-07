@@ -1,15 +1,16 @@
 import React from 'react';
-import { Row, Column } from 'StyledComponents'
+import { Row, Column } from 'StyledComponents';
 import styled from 'styled-components';
-import { themeOpacity, dark, white, sm, lg } from 'Utils'
+import { themeOpacity, dark, white, sm, lg } from 'Utils';
+import KeyboardImg from 'Assets/keyboard.jpg';
 
 import FaBeer from 'react-icons/lib/fa/beer';
 import MdAcUnit from 'react-icons/lib/md/ac-unit';
-import MdAccountBalance from 'react-icons/lib/md/account-balance'
-import MdAddAlarm from 'react-icons/lib/md/add-alarm'
-import MdAddLocation from 'react-icons/lib/md/add-location'
-import MdAllInclusive from 'react-icons/lib/md/all-inclusive'
-import MdAssessment from 'react-icons/lib/md/assessment'
+import MdAccountBalance from 'react-icons/lib/md/account-balance';
+import MdAddAlarm from 'react-icons/lib/md/add-alarm';
+import MdAddLocation from 'react-icons/lib/md/add-location';
+import MdAllInclusive from 'react-icons/lib/md/all-inclusive';
+import MdAssessment from 'react-icons/lib/md/assessment';
 
 const OurFeatures = styled(Column) `
 	background: rgba(255, 255, 255, 0.7294117647058823);
@@ -45,12 +46,12 @@ const OurFeatures = styled(Column) `
 			}
 		}
 	}
-`
+`;
 
 const IconStyle = {
 	fontSize: '5rem',
 	marginBottom: '15px',
-}
+};
 
 const CustomRow = styled(Row) `
 	* {
@@ -139,13 +140,13 @@ const CustomRow = styled(Row) `
 			}
 		}
 	}
-`
+`;
 
 const OurFeatureWrapper = styled.div`
-	background-image: url('http://travellerlifestyle.com/wp-content/uploads/2015/03/keyboard-background-3.jpg');
+	background-image: url(${KeyboardImg});
     background-position: center;
     background-size: cover;
-`
+`;
 
 
 export default class OurServices extends React.Component {

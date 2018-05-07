@@ -67,8 +67,7 @@ export const  H2 = styled.h2`
   color: ${lightDark};
   text-transform: uppercase;
   border-left: 4px solid #a5a5a5;
-  padding-left: 5px;
-  margin-left: 15px;
+  padding-left: 10px;
 `;
 
 export const HiddenImg = styled.img`
